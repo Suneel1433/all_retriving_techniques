@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="5px">
+            <h1>display_webpages</h1>
+            <tr>
+                <th> Topic_name </th>
+                <th> name </th>
+                <th> url </th>
+            </tr>
+                {% for to in webpage %}
+                <tr>
+                    <td>{{to.topic_name}}</td>
+                    <td>{{to.name}}</td>
+                    <td>{{to.url}}</td>
+                </tr>
+                {% endfor %}
+</body>
+</html>
